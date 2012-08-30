@@ -1,4 +1,15 @@
 TemplateProject::Application.routes.draw do
+
+
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
+  resource :me, controller: :users, action: :show, as: :me do
+    resources :devices, only: [:index, :create, :destroy]
+    resources :authorizations, only: [:index, :destroy]
+  end
+  put "me/settings" => "users#update", as: :me_settings
+
+  root :to => 'home#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -3,17 +3,16 @@ development:
   encoding: unicode
   database: template-project_development
   pool: 5
-  #username: postgres
-  #password:
-  host: localhost
+  username: postgres
+  password: postgres
 
 test:
   adapter: postgresql
   encoding: unicode
   database: template-project_test
   pool: 5
-  #username: postgres
-  #password:
+  username: postgres
+  password: postgres
   min_messages: WARNING
   host: localhost
 
@@ -23,5 +22,5 @@ production:
   database: template-project_production
   pool: 5
   username: postgres
-  password:
+  password: postgres
   host: localhost
