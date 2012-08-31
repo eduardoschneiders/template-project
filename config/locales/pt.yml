@@ -7,3 +7,7 @@ pt:
       new:
         sign_up: "Registrar"
         sign_in: "Entrar"
+        name: "Nome"
+        email: "Email"
+        password: "Senha"
+        password_confirmation: "Confirmar senha"
