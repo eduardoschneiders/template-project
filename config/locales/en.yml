@@ -14,3 +14,9 @@ en:
     shared:
       social_links:
         sign_in_with: "Sign in with %{provider}"
+      links:
+        sign_in: "Sign in"
+        sign_up: "Sign up"
+        reset_your_password: "Reset your password"
+        didn_t_receive_confirmation_instructions?: "Didn't receive confirmation instructions?"
+        Didn_t_receive_unlock_instructions?: "Didn't receive unlock instructions?"
